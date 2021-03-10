@@ -12,9 +12,10 @@ Sample assertions:
 assert convertTemp(10,'C') == 50
 assert converTemp(32,'F') == 0
 """
-
+unit1='C'
+unit2='F'
 def converTemp(num,sign):
-    if sign == 'C':
+    if sign == unit1:
         return num * 1.8 + 32
     else:
         return (num - 32) / 1.8
