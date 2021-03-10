@@ -14,7 +14,7 @@ assert converTemp(32,'F') == 0
 """
 unit1='C'
 unit2='F'
-def converTemp(num,sign):
+def convertTemp(num,sign):
     if sign == unit1:
         return num * 1.8 + 32
     else:
