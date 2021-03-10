@@ -13,3 +13,8 @@ assert convertTemp(10,'C') == 50
 assert converTemp(32,'F') == 0
 """
 
+def converTemp(num,sign):
+    if sign == 'C':
+        return num*1.8+32
+    else:
+        return (num-32)/1.8
